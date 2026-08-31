@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon</title>
+    <link rel="icon" type="image/x-icon" href="images/Amazon_logo.png" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div
+        class="hero_container bg-black h-fit flex flex-row"
+        style="border: 3px solid blueviolet"
+      >
+        <!-- child-1 -->
+        <div class="Amazon_logo_parent border w-fit">
+          <img src="images/amazonlogo.png" alt="amazonlogo" class="w-[100px]" />
+        </div>
+
+        <!-- child2 -->
+        <div class="flex flex-row">
+          <div class="amazon_image">
+            <img
+              src="images/location.png"
+              alt="locationicon"
+              class="w-[20px] h-[15px] mt-5"
+            />
+          </div>
+          <div class="location text-white flex flex-col">
+            <p class="text-[12px]">Deliver to</p>
+            <p class="text-[15px] font-semibold">Pakistan</p>
+          </div>
+        </div>
+
+        <!-- child 3 -->
+        <div class="search_bar_parent border relative flex flex-row">
+          <div class="search_bar_child">
+            <div
+              class="category_btn text-[12px] font-thin bg-slate-300 flex flex-row items-center"
+            >
+              <select
+                class="bg-transparent p- w-12 h-10 text-center appearance-none"
+                name="search_category"
+                id="search_category"
+              >
+                <option value="All" hidden>All</option>
+                <option value="Art & Crafts">Art & Crafts</option>
+                <option value="Automobiles">Automobiles</option>
+              </select>
+              <div class="down_arrow w-fit absolute right-1">
+                <img
+                  src="images/listarrow.png"
+                  alt="listarrow"
+                  class="w-[10px]"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- inputbar -->
+          <div class="input_search_bar w-[800px] relative">
+            <input type="text" class="w-[800px] h-[46px] border absolute" />
+
+            <div
+              class="searchbtn absolute right-0 w-[42px] bg-yellow-400 hover:bg-yellow-500"
+            >
+              <button>
+                <img
+                  src="images/searchicon.png"
+                  alt=""
+                  class="relative right-0"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- child-4 -->
+        <div class="language flex flex-row">
+          <div class="flex flex-row">
+            <img src="images/flag.png" alt="" class="w-[25px]" />
+
+            <select
+              name=""
+              id=""
+              class="appearance-none bg-transparent text-white"
+            >
+              <option value="English" hidden>EN</option>
+            </select>
+          </div>
+          <img
+            src="images/arrow_drop_down_24dp_B7B7B7_FILL0_wght400_GRAD0_opsz24.png"
+            alt=""
+            class="p-[0px] w-5"
+          />
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
