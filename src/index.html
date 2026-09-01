@@ -8,23 +8,22 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="w-[100%]">
       <div
-        class="hero_container bg-black h-fit flex flex-row"
-        style="border: 3px solid blueviolet"
+        class="hero_container bg-black h-fit flex flex-row justify-between p-2 w-[100%]"
       >
         <!-- child-1 -->
-        <div class="Amazon_logo_parent border w-fit">
+        <div class="Amazon_logo_parent w-fit hover:border">
           <img src="images/amazonlogo.png" alt="amazonlogo" class="w-[100px]" />
         </div>
 
         <!-- child2 -->
-        <div class="flex flex-row">
+        <div class="flex flex-row hover:border leading-4">
           <div class="amazon_image">
             <img
               src="images/location.png"
               alt="locationicon"
-              class="w-[20px] h-[15px] mt-5"
+              class="w-[20px] h-[15px] mt-4"
             />
           </div>
           <div class="location text-white flex flex-col">
@@ -58,11 +57,11 @@
             </div>
           </div>
           <!-- inputbar -->
-          <div class="input_search_bar w-[800px] relative">
-            <input type="text" class="w-[800px] h-[46px] border absolute" />
+          <div class="input_search_bar w-[780px] relative">
+            <input type="text" class="w-[780px] h-[41px] border absolute" />
 
             <div
-              class="searchbtn absolute right-0 w-[42px] bg-yellow-400 hover:bg-yellow-500"
+              class="searchbtn absolute right-0 w-[40px] bg-yellow-400 hover:bg-yellow-500"
             >
               <button>
                 <img
@@ -76,25 +75,77 @@
         </div>
 
         <!-- child-4 -->
-        <div class="language flex flex-row">
-          <div class="flex flex-row">
+        <div class="language flex flex-row items-center">
+          <div class="flex flex-row hover:border p-2">
             <img src="images/flag.png" alt="" class="w-[25px]" />
 
-            <select
-              name=""
-              id=""
-              class="appearance-none bg-transparent text-white"
-            >
-              <option value="English" hidden>EN</option>
-            </select>
+            <p class="text-white font-semibold">EN</p>
           </div>
           <img
             src="images/arrow_drop_down_24dp_B7B7B7_FILL0_wght400_GRAD0_opsz24.png"
             alt=""
-            class="p-[0px] w-5"
+            class="p-[0px] w-6"
           />
         </div>
+
+        <!-- child5 -->
+        <div class="hover:border leading-4">
+          <div class="flex flex-row text-[12px] text-white items-center">
+            <p>Hello,</p>
+            <p>Sign in</p>
+          </div>
+          <div class="flex flex-row text-white">
+            <p class="font-semibold">Account & List</p>
+            <img
+              src="images/arrow_drop_down_24dp_B7B7B7_FILL0_wght400_GRAD0_opsz24.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- child6 -->
+        <div class="text-white hover:border leading-4">
+          <p class="text-[12px] m-0">Returns</p>
+          <p class="font-semibold">& Orders</p>
+        </div>
+
+        <!-- child7 -->
+        <div class="flex flex-row hover:border">
+          <img src="images/cartt.png" alt="cart" />
+          <p class="text-white mt-4 font-bold">Cart</p>
+        </div>
       </div>
+
+      <nav class="w-[100%] bg-gray-800 p-2">
+        <div class="flex flex-row w-[60%]">
+          <div class="flex flex-row items-center hover:border">
+            <div class="menu_parrent">
+              <div class="menu flex flex-col">
+                <span class="bg-white h-0.5 w-4 m-0.5"></span>
+                <span class="bg-white h-0.5 w-4 m-0.5"></span>
+                <span class="bg-white h-0.5 w-4 m-0.5"></span>
+              </div>
+            </div>
+            <div class="bg-transparent">
+              <p class="text-white font-semibold text-12px">All</p>
+            </div>
+          </div>
+          <div
+            class="text-white font-semibold text-[15px] w-[70%] flex flex-row justify-around"
+          >
+            <a href="#" class="hover:border">Today's Deal </a>
+            <a href="#" class="hover:border">Customer Service</a>
+            <a href="#" class="hover:border">Prime Video</a>
+            <a href="#" class="hover:border">Gift card</a>
+            <a href="#" class="hover:border">Sell</a>
+            <a href="#" class="hover:border">Registery</a>
+          </div>
+        </div>
+      </nav>
     </header>
+    <main class="">
+      <div>
+        <img src="https://m.media-amazon.com/images/I/71ROLBmB4AL._SX3000_.jpg" alt="">
+      </div>
+    </main>
   </body>
 </html>
