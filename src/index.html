@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="images/Amazon_logo.png" />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="bg-gray-300">
     <header class="w-[100%]">
       <div
         class="hero_container bg-black h-fit flex flex-row justify-between p-2 w-[100%]"
@@ -142,111 +142,204 @@
         </div>
       </nav>
     </header>
-    <main class="">
-      <!-- <div>
-        <img src="https://m.media-amazon.com/images/I/71ROLBmB4AL._SX3000_.jpg" alt="">
-      </div> -->
+    <main class="main">
       <div
-        class="h-[100vh] w-[100%] bg-contain bg-no-repeat bg-[url('https://m.media-amazon.com/images/I/71ROLBmB4AL._SX3000_.jpg')] bg-op"
+        class="background h-[500px] w-full bg-[url('https://m.media-amazon.com/images/I/71ROLBmB4AL._SX3000_.jpg')] bg-cover bg-center bg-no-repeat"
       >
-        <!-- child -->
-        <div>
-          <!-- internal child -->
-          <div class="bg-transparent w-fit p-4 flex flex-row">
-            <div class="card flex flex-col justify-start m-3 p-4 bg-white">
-              <p class="text-[130%] font-bold">Get your game on</p>
+        <!-- parent of cards -->
+        <div class="bg-transparent py-[200px]">
+          <!-- child -->
+          <div class="grid grid-cols-4 gap-4 m-4">
+            <!-- card 1 -->
+            <div class="card bg-white w-25% p-4">
+              <p class="text-[20px] font-bold">Get your game on</p>
               <img
+                class="w-[350px] h-[300px] my-5"
                 src="images/Fuji_Gaming_SingleI.jpg"
                 alt=""
-                class="w-[300px] h-[300px] pt-4 pb-4"
               />
-              <a href="#" class="text-[90%] font-normal text-blue-500"
-                >shop gaming</a
-              >
+              <p class="text-[14px] font font-semibold text-blue-400">
+                Shop gaming
+              </p>
             </div>
-            <!-- card 2 -->
+            <!-- card2 -->
 
-            <!-- margin insert -->
-            <div class="m-3 bg-white p-4">
-              <p>Shop Fashion for less</p>
-              <div class="flex flex-row justify-start">
-                <!-- small imges -->
-                <div class="flex flex-col justify-start mt-3 mr-3">
-                  <img src="images/smallimage1.jpg" alt="" />
-                  <p>Jeans Under $50</p>
+            <div class="border w-25% bg-white p-4">
+              <p class="text-[20px] font-bold">Shop Fashion for less</p>
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+                <div class="">
+                  <img
+                    src="images/smallimage1.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Jeans under $50</p>
                 </div>
-                <div class="flex flex-col justify-start mt-3 mr-3">
-                  <img src="images/smallimage2.jpg" alt="" />
-                  <p>Tops under %25</p>
+                <div>
+                  <img
+                    src="images/smallimage2.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Top Under $25</p>
                 </div>
-              </div>
-              <div class="flex flex-row">
-                <!-- small imges -->
-                <div class="flex flex-col justify-start mt-3 mr-3">
-                  <img src="images/smallimage3.jpg" alt="" />
-                  <p>Dresses Under $50</p>
+                <div>
+                  <img
+                    src="images/smallimage3.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Dresses under $30</p>
                 </div>
-                <div class="flex flex-col justify-start mt-3 mr-3">
-                  <img src="images/smallimage4.jpg" alt="" />
-                  <p>Shoes under %50</p>
-                </div>
-              </div>
-              <a href="#">See all deals</a>
-            </div>
-            <!-- card 3 -->
-            <div class="m-3 bg-white p-4">
-              <p>Shop Fashion for less</p>
-              <div class="flex flex-row">
-                <!-- small imges -->
-                <div class="flex flex-col justify-start mt-3 mr-3">
-                  <img src="images/smallimage1.jpg" alt="" />
-                  <p>Jeans Under $50</p>
-                </div>
-                <div class="flex flex-col justify-start mt-3 mr-3">
-                  <img src="images/smallimage2.jpg" alt="" />
-                  <p>Tops under %25</p>
+                <div>
+                  <img
+                    src="images/smallimage4.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Shoes under$50</p>
                 </div>
               </div>
-              <div class="flex flex-row">
-                <!-- small imges -->
-                <div class="flex flex-col justify-start mt-3 mr-3">
-                  <img src="images/smallimage3.jpg" alt="" />
-                  <p>Dresses Under $50</p>
-                </div>
-                <div class="flex flex-col justify-start mt-3 mr-3">
-                  <img src="images/smallimage4.jpg" alt="" />
-                  <p>Shoes under %50</p>
-                </div>
-              </div>
-              <a href="#">See all deals</a>
+              <p class="text-[14px] font-semibold text-blue-300 mt-[60px]">
+                Seel all deals
+              </p>
             </div>
 
-            <!-- card 4 -->
-            <div class="m-3 bg-white p-4">
-              <p>Shop Fashion for less</p>
-              <div class="flex flex-row justify-start">
-                <!-- small imges -->
-                <div class="flex flex-col justify-start mt-3 mr-3">
-                  <img src="images/smallimage1.jpg" alt="" />
-                  <p>Jeans Under $50</p>
+            <!-- card3 -->
+
+            <div class="border w-25% bg-white p-4">
+              <p class="text-[20px] font-bold">Must-haves for every student</p>
+              <img
+                src="images/Fuji_SingleImageCard_BTS_SH26_1x._SY304_CB788455970_.jpg"
+                alt="sigleimage2"
+                class="h-[350px] w-[350px] py-5"
+              />
+              <p class="text-[14px] font-semibold text-blue-300">
+                Shop Back to Scool
+              </p>
+            </div>
+
+            <!-- card4 -->
+
+            <div class="border w-25% bg-white p-4">
+              <p class="text-[20px] font-bold">Must-have school supplies</p>
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+                <div class="">
+                  <img src="images/image9.jpg" alt="image1" />
+                  <p class="text-[12px] font-semibold">Backpack</p>
                 </div>
-                <div class="flex flex-col justify-start mt-3 mr-3">
-                  <img src="images/smallimage2.jpg" alt="" />
-                  <p>Tops under %25</p>
+                <div>
+                  <img src="images/image10.jpg" alt="image1" />
+                  <p class="text-[12px] font-semibold">Electronics</p>
+                </div>
+                <div>
+                  <img src="images/images11.jpg" alt="image1" />
+                  <p class="text-[12px] font-semibold">Stationery</p>
+                </div>
+                <div>
+                  <img src="images/images12.jpg" alt="image1" />
+                  <p class="text-[12px] font-semibold">Fashion</p>
                 </div>
               </div>
-              <div class="flex flex-row">
-                <!-- small imges -->
-                <div class="flex flex-col justify-start mt-3 mr-3">
-                  <img src="images/smallimage3.jpg" alt="" />
-                  <p>Dresses Under $50</p>
+              <p class="text-[14px] font-semibold text-blue-300 mt-[60px]">
+                Shop back to Scool
+              </p>
+            </div>
+
+            <!-- card 5 -->
+            <div class="card bg-white w-25% p-4">
+              <p class="text-[20px] font-bold">Get your game on</p>
+              <img
+                class="w-[350px] h-[300px] my-5"
+                src="images/Fuji_Gaming_SingleI.jpg"
+                alt=""
+              />
+              <p class="text-[14px] font font-semibold text-blue-400">
+                Shop gaming
+              </p>
+            </div>
+            <!-- card6 -->
+
+            <div class="border w-25% bg-white p-4">
+              <p class="text-[20px] font-bold">Shop Fashion for less</p>
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+                <div class="">
+                  <img
+                    src="images/smallimage1.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Jeans under $50</p>
                 </div>
-                <div class="flex flex-col justify-start mt-3 mr-3">
-                  <img src="images/smallimage4.jpg" alt="" />
-                  <p>Shoes under %50</p>
+                <div>
+                  <img
+                    src="images/smallimage2.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Top Under $25</p>
+                </div>
+                <div>
+                  <img
+                    src="images/smallimage3.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Dresses under $30</p>
+                </div>
+                <div>
+                  <img
+                    src="images/smallimage4.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Shoes under$50</p>
                 </div>
               </div>
-              <a href="#">See all deals</a>
+              <p class="text-[14px] font-semibold text-blue-300 mt-[60px]">
+                Seel all deals
+              </p>
+            </div>
+
+            <!-- card7 -->
+
+            <div class="border w-25% bg-white p-4">
+              <p class="text-[20px] font-bold">Must-haves for every student</p>
+              <img
+                src="images/Fuji_SingleImageCard_BTS_SH26_1x._SY304_CB788455970_.jpg"
+                alt="sigleimage2"
+                class="h-[350px] w-[350px] py-5"
+              />
+              <p class="text-[14px] font-semibold text-blue-300">
+                Shop Back to Scool
+              </p>
+            </div>
+
+            <!-- card8 -->
+
+            <div class="border w-25% bg-white p-4">
+              <p class="text-[20px] font-bold">Must-have school supplies</p>
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+                <div class="">
+                  <img src="images/image9.jpg" alt="image1" />
+                  <p class="text-[12px] font-semibold">Backpack</p>
+                </div>
+                <div>
+                  <img src="images/image10.jpg" alt="image1" />
+                  <p class="text-[12px] font-semibold">Electronics</p>
+                </div>
+                <div>
+                  <img src="images/images11.jpg" alt="image1" />
+                  <p class="text-[12px] font-semibold">Stationery</p>
+                </div>
+                <div>
+                  <img src="images/images12.jpg" alt="image1" />
+                  <p class="text-[12px] font-semibold">Fashion</p>
+                </div>
+              </div>
+              <p class="text-[14px] font-semibold text-blue-300 mt-[60px]">
+                Shop back to Scool
+              </p>
             </div>
           </div>
         </div>
