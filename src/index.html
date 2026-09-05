@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="images/Amazon_logo.png" />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-300">
+  <body class="bg-gray-200">
     <header class="w-[100%]">
       <div
         class="hero_container bg-black h-fit flex flex-row justify-between p-2 w-[100%]"
@@ -143,6 +143,7 @@
       </nav>
     </header>
     <main class="main">
+      <!-- cards-item -->
       <div
         class="background h-[500px] w-full bg-[url('https://m.media-amazon.com/images/I/71ROLBmB4AL._SX3000_.jpg')] bg-cover bg-center bg-no-repeat"
       >
@@ -150,24 +151,26 @@
         <div class="bg-transparent py-[200px]">
           <!-- child -->
           <div class="grid grid-cols-4 gap-4 m-4">
-            <!-- card 1 -->
-            <div class="card bg-white w-25% p-4">
+            <!-- card1 -->
+            <div class="card flex flex-col bg-white w-25% p-4">
               <p class="text-[20px] font-bold">Get your game on</p>
               <img
                 class="w-[350px] h-[300px] my-5"
                 src="images/Fuji_Gaming_SingleI.jpg"
                 alt=""
               />
-              <p class="text-[14px] font font-semibold text-blue-400">
+              <p
+                class="text-[14px] font font-semibold text-blue-400 hover:text-blue-500 cursor-pointer mt-[60px]"
+              >
                 Shop gaming
               </p>
             </div>
             <!-- card2 -->
 
-            <div class="border w-25% bg-white p-4">
+            <div class="border w-25% bg-white p-4 flex flex-col">
               <p class="text-[20px] font-bold">Shop Fashion for less</p>
               <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
-                <div class="">
+                <div class="flex flex-col justify-start">
                   <img
                     src="images/smallimage1.jpg"
                     alt="image1"
@@ -175,7 +178,7 @@
                   />
                   <p class="text-[12px] font-semibold">Jeans under $50</p>
                 </div>
-                <div>
+                <div class="flex flex-col justify-start">
                   <img
                     src="images/smallimage2.jpg"
                     alt="image1"
@@ -183,7 +186,7 @@
                   />
                   <p class="text-[12px] font-semibold">Top Under $25</p>
                 </div>
-                <div>
+                <div class="flex flex-col justify-start">
                   <img
                     src="images/smallimage3.jpg"
                     alt="image1"
@@ -191,7 +194,7 @@
                   />
                   <p class="text-[12px] font-semibold">Dresses under $30</p>
                 </div>
-                <div>
+                <div class="flex flex-col justify-start">
                   <img
                     src="images/smallimage4.jpg"
                     alt="image1"
@@ -200,145 +203,760 @@
                   <p class="text-[12px] font-semibold">Shoes under$50</p>
                 </div>
               </div>
-              <p class="text-[14px] font-semibold text-blue-300 mt-[60px]">
+              <p
+                class="text-[14px] font-semibold text-blue-300 hover:text-blue-500 mt-[60px] cursor-pointer"
+              >
                 Seel all deals
               </p>
             </div>
 
             <!-- card3 -->
 
-            <div class="border w-25% bg-white p-4">
+            <div class="border w-25% bg-white p-4 flex flex-col">
               <p class="text-[20px] font-bold">Must-haves for every student</p>
               <img
                 src="images/Fuji_SingleImageCard_BTS_SH26_1x._SY304_CB788455970_.jpg"
                 alt="sigleimage2"
                 class="h-[350px] w-[350px] py-5"
               />
-              <p class="text-[14px] font-semibold text-blue-300">
+              <p
+                class="text-[14px] font-semibold text-blue-300 hover:text-blue-500 cursor-pointer mt-[60px]"
+              >
                 Shop Back to Scool
               </p>
             </div>
 
             <!-- card4 -->
 
-            <div class="border w-25% bg-white p-4">
+            <div class="border w-25% bg-white p-4 flex flex-col">
               <p class="text-[20px] font-bold">Must-have school supplies</p>
               <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
-                <div class="">
+                <div class="flex flex-col justify-start">
                   <img src="images/image9.jpg" alt="image1" />
                   <p class="text-[12px] font-semibold">Backpack</p>
                 </div>
-                <div>
+                <div class="flex flex-col justify-start">
                   <img src="images/image10.jpg" alt="image1" />
                   <p class="text-[12px] font-semibold">Electronics</p>
                 </div>
-                <div>
+                <div class="flex flex-col justify-start">
                   <img src="images/images11.jpg" alt="image1" />
                   <p class="text-[12px] font-semibold">Stationery</p>
                 </div>
-                <div>
+                <div class="flex flex-col justify-start">
                   <img src="images/images12.jpg" alt="image1" />
                   <p class="text-[12px] font-semibold">Fashion</p>
                 </div>
               </div>
-              <p class="text-[14px] font-semibold text-blue-300 mt-[60px]">
+              <p
+                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+              >
                 Shop back to Scool
               </p>
             </div>
 
             <!-- card 5 -->
             <div class="card bg-white w-25% p-4">
-              <p class="text-[20px] font-bold">Get your game on</p>
-              <img
-                class="w-[350px] h-[300px] my-5"
-                src="images/Fuji_Gaming_SingleI.jpg"
-                alt=""
-              />
-              <p class="text-[14px] font font-semibold text-blue-400">
+              <p class="text-[20px] font-bold">
+                Top categories in Kitchen appliences
+              </p>
+              <div class="grid grid-rows-[200px] [200px] my-5">
+                <div class="flex flex-col justify-start">
+                  <img
+                    class="w-[350px] h-[150px]"
+                    src="images/image13.jpg"
+                    alt="image13"
+                  />
+                  <p class="text-[14px] font-semibold">Cookers</p>
+                </div>
+
+                <div class="grid grid-cols-3">
+                  <div class="flex flex-col justify-start">
+                    <img src="images/image 14.jpg" alt="" />
+                    <p class="text-[14px] font-semibold">Cofee</p>
+                  </div>
+                  <div class="flex flex-col justify-start">
+                    <img src="images/image15.jpg" alt="" />
+                    <p class="text-[14px] font-semibold">Pots and Pans</p>
+                  </div>
+                  <div class="flex flex-col justify-start">
+                    <img src="images/image16.jpg" alt="" />
+                    <p class="text-[14px] font-semibold">Kettles</p>
+                  </div>
+                </div>
+              </div>
+
+              <p
+                class="text-[14px] font font-semibold text-blue-400 hover:text-blue-500 cursor-pointer mt-[60px]"
+              >
                 Shop gaming
               </p>
             </div>
             <!-- card6 -->
 
-            <div class="border w-25% bg-white p-4">
-              <p class="text-[20px] font-bold">Shop Fashion for less</p>
+            <div class="border w-25% bg-white p-4 flex flex-col justify-start">
+              <p class="text-[20px] font-bold">New Home arrivals under $50</p>
               <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
-                <div class="">
+                <div class="flex flex-col justify-start">
                   <img
-                    src="images/smallimage1.jpg"
+                    src="images/image17.jpg"
                     alt="image1"
                     class="cursor-pointer"
                   />
-                  <p class="text-[12px] font-semibold">Jeans under $50</p>
+                  <p class="text-[12px] font-semibold">Kitchen & Dinning</p>
                 </div>
-                <div>
+                <div class="flex flex-col justify-start">
                   <img
-                    src="images/smallimage2.jpg"
+                    src="images/image18.jpg"
                     alt="image1"
                     class="cursor-pointer"
                   />
-                  <p class="text-[12px] font-semibold">Top Under $25</p>
+                  <p class="text-[12px] font-semibold">Home Improvement</p>
                 </div>
-                <div>
+                <div class="flex flex-col justify-start">
                   <img
-                    src="images/smallimage3.jpg"
+                    src="images/image19.jpg"
                     alt="image1"
                     class="cursor-pointer"
                   />
-                  <p class="text-[12px] font-semibold">Dresses under $30</p>
+                  <p class="text-[12px] font-semibold">Decore</p>
                 </div>
-                <div>
+                <div class="flex flex-col justify-start">
                   <img
-                    src="images/smallimage4.jpg"
+                    src="images/image20.jpg"
                     alt="image1"
                     class="cursor-pointer"
                   />
-                  <p class="text-[12px] font-semibold">Shoes under$50</p>
+                  <p class="text-[12px] font-semibold">Bedding & Bath</p>
                 </div>
               </div>
-              <p class="text-[14px] font-semibold text-blue-300 mt-[60px]">
-                Seel all deals
+              <p
+                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+              >
+                Shop all latest from home
               </p>
             </div>
 
             <!-- card7 -->
 
-            <div class="border w-25% bg-white p-4">
-              <p class="text-[20px] font-bold">Must-haves for every student</p>
-              <img
-                src="images/Fuji_SingleImageCard_BTS_SH26_1x._SY304_CB788455970_.jpg"
-                alt="sigleimage2"
-                class="h-[350px] w-[350px] py-5"
-              />
-              <p class="text-[14px] font-semibold text-blue-300">
-                Shop Back to Scool
+            <div class="border w-25% bg-white p-4 flex flex-col justify-start">
+              <p class="text-[20px] font-bold">Fashion trends you like</p>
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image21.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Dresses</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image22.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Knits</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image19.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Jackets</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image23.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Jewelry</p>
+                </div>
+              </div>
+              <p
+                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+              >
+                Explore more
               </p>
             </div>
 
             <!-- card8 -->
 
-            <div class="border w-25% bg-white p-4">
-              <p class="text-[20px] font-bold">Must-have school supplies</p>
+            <div class="border w-25% bg-white p-4 flex flex-col justify-start">
+              <p class="text-[20px] font-bold">New Home arrivals under $50</p>
               <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
-                <div class="">
-                  <img src="images/image9.jpg" alt="image1" />
-                  <p class="text-[12px] font-semibold">Backpack</p>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image24.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Basket & hampers</p>
                 </div>
-                <div>
-                  <img src="images/image10.jpg" alt="image1" />
-                  <p class="text-[12px] font-semibold">Electronics</p>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image25.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Hardware</p>
                 </div>
-                <div>
-                  <img src="images/images11.jpg" alt="image1" />
-                  <p class="text-[12px] font-semibold">Stationery</p>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image26.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Accent furniture</p>
                 </div>
-                <div>
-                  <img src="images/images12.jpg" alt="image1" />
-                  <p class="text-[12px] font-semibold">Fashion</p>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image27.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Wallpaper & paint</p>
                 </div>
               </div>
-              <p class="text-[14px] font-semibold text-blue-300 mt-[60px]">
-                Shop back to Scool
+              <p
+                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+              >
+                Shop home products
+              </p>
+            </div>
+            <!-- endofcards -->
+            <!-- slider 1 -->
+            <div class="slidebar bg-white col-span-4">
+              <div class="flex flex-row gap-2">
+                <p class="text-[20px] font-bold">
+                  Related to items you've veiwed
+                </p>
+                <a href="#">See more</a>
+              </div>
+              <div class="flex flex-row justify-around gap-3">
+                <img
+                  src="images/slideimg1.jpg"
+                  alt="image1"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg2.jpg"
+                  alt="image2"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg3.jpg"
+                  alt="image3"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg4.jpg"
+                  alt="image4"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg5.jpg"
+                  alt="image5"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg6.jpg"
+                  alt="image6"
+                  class="w-[250px] h-[200px]"
+                />
+              </div>
+            </div>
+
+            <!-- 2ndslidee -->
+            <div class="slidebar bg-white col-span-4">
+              <div class="flex flex-row gap-2">
+                <p class="text-[20px] font-bold">
+                  Best Seller in Clothing, Shoes & Jewelry
+                </p>
+              </div>
+              <div class="flex flex-row justify-around gap-3">
+                <img
+                  src="images/slideimg7.jpg"
+                  alt="image1"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/sideimg8.jpg"
+                  alt="image2"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg9.jpg"
+                  alt="image3"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg10.jpg"
+                  alt="image4"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg11.jpg"
+                  alt="image5"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg12.jpg"
+                  alt="image6"
+                  class="w-[250px] h-[200px]"
+                />
+              </div>
+            </div>
+
+            <!-- new card start -->
+
+            <!-- card 9 -->
+            <div class="border w-25% bg-white p-4 flex flex-col justify-start">
+              <p class="text-[20px] font-bold">Wireless Tech</p>
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image29.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Smartphones</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image30.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Watches</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image31.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Headphones</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image32.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Tablets</p>
+                </div>
+              </div>
+              <p
+                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+              >
+                Discover more
+              </p>
+            </div>
+            <!-- card10 -->
+
+            <div class="border w-25% bg-white p-4 flex flex-col justify-start">
+              <p class="text-[20px] font-bold">Gaming merchandise</p>
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image33.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Apparel</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image34.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Hats</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image35.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Action figures</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image36.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Mugs</p>
+                </div>
+              </div>
+              <p
+                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+              >
+                See more
+              </p>
+            </div>
+
+            <!-- card11 -->
+
+            <div class="border w-25% bg-white p-4 flex flex-col justify-start">
+              <p class="text-[20px] font-bold">Level up your PC here</p>
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image37.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Laptops</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image38.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">PCs</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image39.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Hard Drives</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image40.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Monitors</p>
+                </div>
+              </div>
+              <p
+                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+              >
+                Discover more
+              </p>
+            </div>
+
+            <!-- card12 -->
+
+            <div class="border w-25% bg-white p-4 flex flex-col justify-start">
+              <p class="text-[20px] font-bold">Gear up to get fit</p>
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image41.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Clothing</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image42.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Trackers</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image43.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Equipment</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image44.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Deals</p>
+                </div>
+              </div>
+              <p
+                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+              >
+                Discover me
+              </p>
+            </div>
+
+            <!-- 3rd slidebar -->
+            <div class="slidebar bg-white col-span-4">
+              <div class="flex flex-row gap-2">
+                <p class="text-[20px] font-bold">
+                  International top sellers in home
+                </p>
+              </div>
+              <div class="flex flex-row justify-around gap-3">
+                <img
+                  src="images/slideimg13.jpg"
+                  alt="image1"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg14.jpg"
+                  alt="image2"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg15.jpg"
+                  alt="image3"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg16.jpg"
+                  alt="image4"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg17.jpg"
+                  alt="image5"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg18.jpg"
+                  alt="image6"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg19.jpg"
+                  alt="image6"
+                  class="w-[250px] h-[200px]"
+                />
+              </div>
+            </div>
+
+            <!-- 4th slider -->
+            <div class="slidebar bg-white col-span-4">
+              <div class="flex flex-row gap-2">
+                <p class="text-[20px] font-bold">Top picks for Pakistan</p>
+              </div>
+              <div class="flex flex-row justify-around gap-3">
+                <img
+                  src="images/slideimg20.jpg"
+                  alt="image1"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg21.jpg"
+                  alt="image2"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg22.jpg"
+                  alt="image3"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg23.jpg"
+                  alt="image4"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg24.jpg"
+                  alt="image5"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg25.jpg"
+                  alt="image6"
+                  class="w-[250px] h-[200px]"
+                />
+                <img
+                  src="images/slideimg26.jpg"
+                  alt="image6"
+                  class="w-[250px] h-[200px]"
+                />
+              </div>
+            </div>
+
+            <!-- last card -->
+            <!-- card 13 -->
+            <div class="border w-25% bg-white p-4 flex flex-col justify-start">
+              <p class="text-[20px] font-bold">Level up your beauty routine</p>
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image45.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Makeup</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image46.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Brushes</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image47.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Sponges</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image48.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Mirrros</p>
+                </div>
+              </div>
+              <p
+                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+              >
+                See more
+              </p>
+            </div>
+
+            <!-- card14 -->
+
+            <div class="border w-25% bg-white p-4 flex flex-col justify-start">
+              <p class="text-[20px] font-bold">Most-loved watches</p>
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image49.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Women</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image50.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Men</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image51.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Girls</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image52.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Boys</p>
+                </div>
+              </div>
+              <p
+                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+              >
+                Discover me
+              </p>
+            </div>
+
+            <!-- card15 -->
+
+            <div class="border w-25% bg-white p-4 flex flex-col justify-start">
+              <p class="text-[20px] font-bold">Most-Loved travel essentials</p>
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image53.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Backpacks</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image54.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Suitcases</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image55.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Accessories</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image56.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Handbags</p>
+                </div>
+              </div>
+              <p
+                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+              >
+                Discover me
+              </p>
+            </div>
+
+            <!-- card16 -->
+
+            <div class="border w-25% bg-white p-4 flex flex-col justify-start">
+              <p class="text-[20px] font-bold">Deals on top categories</p>
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image57.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Books</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image58.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Fashion</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image59.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">PC</p>
+                </div>
+                <div class="flex flex-col justify-start">
+                  <img
+                    src="images/image60.jpg"
+                    alt="image1"
+                    class="cursor-pointer"
+                  />
+                  <p class="text-[12px] font-semibold">Beauty</p>
+                </div>
+              </div>
+              <p
+                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+              >
+                Discover me
               </p>
             </div>
           </div>
