@@ -633,6 +633,13 @@ video {
   margin-top: 60px;
 }
 
+.line-clamp-4 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
 .flex {
   display: flex;
 }
@@ -690,10 +697,6 @@ video {
   height: fit-content;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .w-12 {
   width: 3rem;
 }
@@ -718,8 +721,8 @@ video {
   width: 10px;
 }
 
-.w-\[110px\] {
-  width: 110px;
+.w-\[120px\] {
+  width: 120px;
 }
 
 .w-\[130px\] {
@@ -770,10 +773,6 @@ video {
   width: 50%;
 }
 
-.w-\[55px\] {
-  width: 55px;
-}
-
 .w-\[60\%\] {
   width: 60%;
 }
@@ -793,10 +792,6 @@ video {
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .cursor-pointer {
@@ -873,6 +868,10 @@ video {
   gap: 1rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .gap-x-1 {
   -moz-column-gap: 0.25rem;
        column-gap: 0.25rem;
@@ -881,6 +880,11 @@ video {
 .gap-x-4 {
   -moz-column-gap: 1rem;
        column-gap: 1rem;
+}
+
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
 }
 
 .gap-y-1 {
@@ -893,10 +897,6 @@ video {
 
 .gap-y-3 {
   row-gap: 0.75rem;
-}
-
-.gap-y-5 {
-  row-gap: 1.25rem;
 }
 
 .gap-y-8 {
@@ -981,14 +981,6 @@ video {
   background-image: url('https://m.media-amazon.com/images/I/71ROLBmB4AL._SX3000_.jpg');
 }
 
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
-}
-
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -1008,11 +1000,6 @@ video {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-.px-48 {
-  padding-left: 12rem;
-  padding-right: 12rem;
 }
 
 .px-6 {
@@ -1055,9 +1042,36 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .py-\[200px\] {
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.py-\[00px\] {
+  padding-top: 00px;
+  padding-bottom: 00px;
+}
+
+.py-\[300px\] {
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+
+.pt-\[300px\] {
+  padding-top: 300px;
+}
+
+.pt-\[20\] {
+  padding-top: 20;
+}
+
+.pt-\[20\%\] {
+  padding-top: 20%;
 }
 
 .text-center {
