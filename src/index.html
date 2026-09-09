@@ -7,10 +7,11 @@
     <link rel="icon" type="image/x-icon" href="images/Amazon_logo.png" />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-200">
+  <body class="bg-gray-200 w-[100%]">
     <header class="w-[100%]">
+      <!-- parent -->
       <div
-        class="hero_container bg-black h-fit flex flex-row justify-between p-2 w-[100%]"
+        class="hero_container bg-black h-fit flex flex-row justify-around p-2 border"
       >
         <!-- child-1 -->
         <div class="Amazon_logo_parent w-fit hover:border">
@@ -33,7 +34,7 @@
         </div>
 
         <!-- child 3 -->
-        <div class="search_bar_parent border relative flex flex-row">
+        <div class="search_bar_parent border relative flex flex-row xl:[100%] lg:w-[40%] md:w-[40%] ">
           <div class="search_bar_child">
             <div
               class="category_btn text-[12px] font-thin bg-slate-300 flex flex-row items-center"
@@ -57,8 +58,8 @@
             </div>
           </div>
           <!-- inputbar -->
-          <div class="input_search_bar w-[780px] relative">
-            <input type="text" class="w-[780px] h-[41px] border absolute" />
+          <div class="input_search_bar w-[100%] relative">
+            <input type="text" class="w-[100%] h-[41px] border absolute" />
 
             <div
               class="searchbtn absolute right-0 w-[40px] bg-yellow-400 hover:bg-yellow-500"
@@ -434,49 +435,66 @@
             </div>
             <!-- endofcards -->
             <!-- slider 1 -->
-            <div class="slidebar bg-white col-span-4">
+            <div class="slidebarone group bg-white col-span-4 relative">
+              <!-- left arrow -->
+              <div
+                class="bg-white w-[5%] border px-3 py-7 absolute top-[30%] hidden group-hover:block"
+              >
+                <img src="images/leftarrow.png" alt="leftarrow" />
+              </div>
               <div class="flex flex-row gap-2">
                 <p class="text-[20px] font-bold">
                   Related to items you've veiwed
                 </p>
                 <a href="#">See more</a>
               </div>
-              <div class="flex flex-row justify-around gap-3">
+              <div class="flex flex-row gap-3">
                 <img
                   src="images/slideimg1.jpg"
                   alt="image1"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[15%] md:h-[200px] xl:xl:w-[16%] xl:xl:h-[200px] lg:w-[150px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg2.jpg"
                   alt="image2"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[15%] md:h-[200px] xl:w-[16%] xl:h-[200px] lg:w-[150px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg3.jpg"
                   alt="image3"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[15%] md:h-[200px] xl:w-[16%] xl:h-[200px] lg:w-[150px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg4.jpg"
                   alt="image4"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[15%] md:h-[200px] xl:w-[16%] xl:h-[200px] lg:w-[150px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg5.jpg"
                   alt="image5"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[15%] md:h-[200px] xl:w-[16%] xl:h-[200px] lg:w-[150px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg6.jpg"
                   alt="image6"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[15%] md:h-[200px] xl:w-[16%] xl:h-[200px] lg:w-[150px] lg:h-[200px]"
                 />
+              </div>
+              <!-- right arrow -->
+              <div
+                class="bg-white w-[5%] border px-3 py-7 absolute top-[30%] right-0 hidden group-hover:block"
+              >
+                <img src="images/rightarrow.png" alt="rightarrow" />
               </div>
             </div>
 
             <!-- 2ndslidee -->
-            <div class="slidebar bg-white col-span-4">
+            <div class="group slidebar bg-white col-span-4 relative">
+              <div
+                class="bg-white w-[5%] border px-3 py-7 absolute top-[30%] hidden group-hover:block"
+              >
+                <img src="images/leftarrow.png" alt="leftarrow" />
+              </div>
               <div class="flex flex-row gap-2">
                 <p class="text-[20px] font-bold">
                   Best Seller in Clothing, Shoes & Jewelry
@@ -486,33 +504,38 @@
                 <img
                   src="images/slideimg7.jpg"
                   alt="image1"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[15%] md:h-[200px] xl:w-[16%] xl:h-[200px] lg:w-[150px] lg:h-[200px]"
                 />
                 <img
                   src="images/sideimg8.jpg"
                   alt="image2"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[15%] md:h-[200px] xl:w-[16%] xl:h-[200px] lg:w-[150px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg9.jpg"
                   alt="image3"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[15%] md:h-[200px] xl:w-[16%] xl:h-[200px] lg:w-[150px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg10.jpg"
                   alt="image4"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[15%] md:h-[200px] xl:w-[16%] xl:h-[200px] lg:w-[150px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg11.jpg"
                   alt="image5"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[15%] md:h-[200px] xl:w-[16%] xl:h-[200px] lg:w-[150px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg12.jpg"
                   alt="image6"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[15%] md:h-[200px] xl:w-[16%] xl:h-[200px] lg:w-[150px] lg:h-[200px]"
                 />
+              </div>
+              <div
+                class="bg-white w-[5%] border px-3 py-7 absolute top-[30%] right-0 hidden group-hover:block"
+              >
+                <img src="images/rightarrow.png" alt="rightarrow" />
               </div>
             </div>
 
@@ -697,7 +720,12 @@
             </div>
 
             <!-- 3rd slidebar -->
-            <div class="slidebar bg-white col-span-4">
+            <div class="slidebar bg-white col-span-4 relative group">
+              <div
+                class="bg-white w-[5%] border px-3 py-7 absolute top-[30%] hidden group-hover:block"
+              >
+                <img src="images/leftarrow.png" alt="leftarrow" />
+              </div>
               <div class="flex flex-row gap-2">
                 <p class="text-[20px] font-bold">
                   International top sellers in home
@@ -707,43 +735,53 @@
                 <img
                   src="images/slideimg13.jpg"
                   alt="image1"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[12%] md:h-[200px] xl:w-[14%] xl:h-[200px] lg:w-[130px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg14.jpg"
                   alt="image2"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[12%] md:h-[200px] xl:w-[14%] xl:h-[200px] lg:w-[130px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg15.jpg"
                   alt="image3"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[12%] md:h-[200px] xl:w-[14%] xl:h-[200px] lg:w-[130px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg16.jpg"
                   alt="image4"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[12%] md:h-[200px] xl:w-[14%] xl:h-[200px] lg:w-[130px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg17.jpg"
                   alt="image5"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[12%] md:h-[200px] xl:w-[14%] xl:h-[200px] lg:w-[130px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg18.jpg"
                   alt="image6"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[12%] md:h-[200px] xl:w-[14%] xl:h-[200px] lg:w-[130px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg19.jpg"
                   alt="image6"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[12%] md:h-[200px] xl:w-[14%] xl:h-[200px] lg:w-[120px] lg:h-[200px]"
                 />
+              </div>
+              <div
+                class="bg-white w-[5%] border px-3 py-7 absolute top-[30%] right-0 hidden group-hover:block"
+              >
+                <img src="images/rightarrow.png" alt="rightarrow" />
               </div>
             </div>
 
             <!-- 4th slider -->
-            <div class="slidebar bg-white col-span-4">
+            <div class="slidebar group bg-white col-span-4 relative">
+              <div
+                class="bg-white w-[5%] border px-3 py-7 absolute top-[30%] hidden group-hover:block"
+              >
+                <img src="images/leftarrow.png" alt="leftarrow" />
+              </div>
               <div class="flex flex-row gap-2">
                 <p class="text-[20px] font-bold">Top picks for Pakistan</p>
               </div>
@@ -751,38 +789,43 @@
                 <img
                   src="images/slideimg20.jpg"
                   alt="image1"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[12%] md:h-[200px] xl:w-[14%] xl:h-[200px] lg:w-[130px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg21.jpg"
                   alt="image2"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[12%] md:h-[200px] xl:w-[14%] xl:h-[200px] lg:w-[130px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg22.jpg"
                   alt="image3"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[12%] md:h-[200px] xl:w-[14%] xl:h-[200px] lg:w-[130px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg23.jpg"
                   alt="image4"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[12%] md:h-[200px] xl:w-[14%] xl:h-[200px] lg:w-[130px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg24.jpg"
                   alt="image5"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[12%] md:h-[200px] xl:w-[14%] xl:h-[200px] lg:w-[130px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg25.jpg"
                   alt="image6"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[12%] md:h-[200px] xl:w-[14%] xl:h-[200px] lg:w-[130px] lg:h-[200px]"
                 />
                 <img
                   src="images/slideimg26.jpg"
                   alt="image6"
-                  class="w-[250px] h-[200px]"
+                  class="md:w-[12%] md:h-[200px] xl:w-[14%] xl:h-[200px] lg:w-[130px] lg:h-[200px]"
                 />
+              </div>
+              <div
+                class="bg-white w-[5%] border px-3 py-7 absolute top-[30%] right-0 hidden group-hover:block"
+              >
+                <img src="images/rightarrow.png" alt="rightarrow" />
               </div>
             </div>
 
@@ -993,7 +1036,7 @@
                 <!-- start cards -->
                 <div class="flex flex-row border-b-2 py-2">
                   <!-- cardone -->
-                  <div class="bg-white flex flex-col w-[180px]">
+                  <div class="bg-white flex flex-col xl:w-[180px] lg:w-[120px]">
                     <img src="images/brwimage1.jpg" alt="" />
                     <p class="text-blue-500">
                       <a href="" class="hover:underline line-clamp-4"
@@ -1041,7 +1084,7 @@
                   </div>
 
                   <!-- cardtwo -->
-                  <div class="bg-white flex flex-col w-[180px]">
+                  <div class="bg-white flex flex-col xl:w-[180px] lg:w-[120px]">
                     <img src="images/brwimage2_.jpg" alt="" />
                     <p class="text-blue-500">
                       <a href="" class="hover:underline line-clamp-4"
@@ -1089,7 +1132,7 @@
                   </div>
 
                   <!-- cardthree -->
-                  <div class="bg-white flex flex-col w-[180px]">
+                  <div class="bg-white flex flex-col xl:w-[180px] lg:w-[120px]">
                     <img src="images/brwimage3.jpg" alt="" />
                     <p class="text-blue-500">
                       <a href="" class="hover:underline line-clamp-4"
@@ -1136,7 +1179,7 @@
                   </div>
 
                   <!-- cardfour -->
-                  <div class="bg-white flex flex-col w-[180px]">
+                  <div class="bg-white flex flex-col xl:w-[180px] lg:w-[120px]">
                     <img src="images/brwimage4.jpg" alt="" />
                     <p class="text-blue-500">
                       <a href="" class="hover:underline line-clamp-4"
@@ -1184,7 +1227,7 @@
                   </div>
 
                   <!-- cardfivith -->
-                  <div class="bg-white flex flex-col w-[180px]">
+                  <div class="bg-white flex flex-col xl:w-[180px] lg:w-[120px]">
                     <img src="images/bewimage5.jpg" alt="" />
                     <p class="text-blue-500">
                       <a href="" class="hover:underline line-clamp-4"
@@ -1232,7 +1275,7 @@
                   </div>
 
                   <!-- cardsixth -->
-                  <div class="bg-white flex flex-col w-[180px]">
+                  <div class="bg-white flex flex-col xl:w-[180px] lg:w-[120px]">
                     <img src="images/brwimage6.jpg" alt="" />
                     <p class="text-blue-500">
                       <a href="" class="hover:underline line-clamp-4"
@@ -1280,7 +1323,7 @@
                   </div>
 
                   <!-- cardseven -->
-                  <div class="bg-white flex flex-col w-[180px]">
+                  <div class="bg-white flex flex-col xl:w-[180px] lg:w-[120px]">
                     <img src="images/brwimage7.jpg" alt="" />
                     <p class="text-blue-500">
                       <a href="" class="hover:underline line-clamp-4"
@@ -1497,7 +1540,7 @@
           <!-- subc child -->
           <!-- one -->
           <div>
-            <ul class="flex flex-row justify-center gap-x-6">
+            <ul class="flex flex-row justify-center items-center gap-x-6">
               <li class="w-[120px] hover:underline">
                 <a href="#" class="">
                   <p class="text-gray-300 text-[12px] font-bold">
@@ -1563,7 +1606,7 @@
 
           <!-- two -->
           <div>
-            <ul class="flex flex-row justify-center gap-x-6">
+            <ul class="flex flex-row justify-center items-center gap-x-6">
               <li class="w-[120px] hover:underline">
                 <a href="#">
                   <p class="text-gray-300 text-[12px] font-bold">
@@ -1633,7 +1676,7 @@
 
           <!-- three -->
           <div>
-            <ul class="flex flex-row justify-center gap-x-6">
+            <ul class="flex flex-row justify-center gap-x-6 items-center">
               <li class="w-[120px] hover:underline">
                 <a href="#">
                   <p class="text-gray-300 text-[12px] font-bold">IMDbPro</p>
@@ -1697,7 +1740,7 @@
 
           <!-- fourth -->
           <div>
-            <ul class="flex flex-row justify-center gap-x-6">
+            <ul class="flex flex-row justify-center items-center gap-x-6">
               <li class="w-[120px] hover:underline">
                 <a href="#">
                   <p class="text-gray-300 text-[12px] font-bold">eero WiFi</p>

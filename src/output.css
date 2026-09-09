@@ -604,6 +604,10 @@ video {
   right: 0.25rem;
 }
 
+.top-\[30\%\] {
+  top: 30%;
+}
+
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
@@ -670,10 +674,6 @@ video {
 
 .h-\[15px\] {
   height: 15px;
-}
-
-.h-\[200px\] {
-  height: 200px;
 }
 
 .h-\[300px\] {
@@ -753,10 +753,6 @@ video {
   width: 20px;
 }
 
-.w-\[250px\] {
-  width: 250px;
-}
-
 .w-\[25px\] {
   width: 25px;
 }
@@ -769,6 +765,10 @@ video {
   width: 40px;
 }
 
+.w-\[5\%\] {
+  width: 5%;
+}
+
 .w-\[50\%\] {
   width: 50%;
 }
@@ -779,10 +779,6 @@ video {
 
 .w-\[70\%\] {
   width: 70%;
-}
-
-.w-\[780px\] {
-  width: 780px;
 }
 
 .w-\[80px\] {
@@ -1042,32 +1038,14 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-\[200px\] {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
-.py-\[00px\] {
-  padding-top: 00px;
-  padding-bottom: 00px;
-}
-
-.py-\[300px\] {
-  padding-top: 300px;
-  padding-bottom: 300px;
-}
-
-.pt-\[300px\] {
-  padding-top: 300px;
-}
-
-.pt-\[20\] {
-  padding-top: 20;
 }
 
 .pt-\[20\%\] {
@@ -1162,6 +1140,12 @@ video {
   text-decoration-line: underline;
 }
 
+/* @layer base {
+  * {
+    @apply box-border m-0 p-0 border-2 border-black;
+  }
+} */
+
 .hover\:border:hover {
   border-width: 1px;
 }
@@ -1190,4 +1174,77 @@ video {
   text-decoration-line: underline;
 }
 
+.group:hover .group-hover\:block {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .md\:h-\[200px\] {
+    height: 200px;
+  }
+
+  .md\:w-\[12\%\] {
+    width: 12%;
+  }
+
+  .md\:w-\[15\%\] {
+    width: 15%;
+  }
+
+  .md\:w-\[40\%\] {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:h-\[200px\] {
+    height: 200px;
+  }
+
+  .lg\:w-\[120px\] {
+    width: 120px;
+  }
+
+  .lg\:w-\[130px\] {
+    width: 130px;
+  }
+
+  .lg\:w-\[150px\] {
+    width: 150px;
+  }
+
+  .lg\:w-\[40\%\] {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:h-\[200px\] {
+    height: 200px;
+  }
+
+  @media (min-width: 1280px) {
+    .xl\:xl\:h-\[200px\] {
+      height: 200px;
+    }
+  }
+
+  .xl\:w-\[14\%\] {
+    width: 14%;
+  }
+
+  .xl\:w-\[16\%\] {
+    width: 16%;
+  }
+
+  .xl\:w-\[180px\] {
+    width: 180px;
+  }
+
+  @media (min-width: 1280px) {
+    .xl\:xl\:w-\[16\%\] {
+      width: 16%;
+    }
+  }
+}
 

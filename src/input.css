@@ -2,4 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @layer base {
+  * {
+    @apply box-border m-0 p-0 border-2 border-black;
+  }
+} */
 
