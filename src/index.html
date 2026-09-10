@@ -7,8 +7,8 @@
     <link rel="icon" type="image/x-icon" href="images/Amazon_logo.png" />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="bg-gray-200 w-[100%]">
-    <header class="w-[100%]">
+  <body class="bg-gray-200">
+    <header class="">
       <!-- parent -->
       <div
         class="hero_container bg-black h-fit flex flex-row justify-around p-2 border"
@@ -28,13 +28,15 @@
             />
           </div>
           <div class="location text-white flex flex-col">
-            <p class="text-[12px]">Deliver to</p>
-            <p class="text-[15px] font-semibold">Pakistan</p>
+            <p class="text-[12px] md:text-[10px]">Deliver to</p>
+            <p class="text-[15px] md:text-[12px] font-semibold">Pakistan</p>
           </div>
         </div>
 
         <!-- child 3 -->
-        <div class="search_bar_parent border relative flex flex-row xl:[100%] lg:w-[40%] md:w-[40%] ">
+        <div
+          class="search_bar_parent border relative flex flex-row xl:w-[60%] lg:w-[40%] md:w-[35%]"
+        >
           <div class="search_bar_child">
             <div
               class="category_btn text-[12px] font-thin bg-slate-300 flex flex-row items-center"
@@ -91,12 +93,14 @@
 
         <!-- child5 -->
         <div class="hover:border leading-4">
-          <div class="flex flex-row text-[12px] text-white items-center">
+          <div
+            class="flex flex-row text-[12px] md:text-[10px] text-white items-center"
+          >
             <p>Hello,</p>
             <p>Sign in</p>
           </div>
           <div class="flex flex-row text-white">
-            <p class="font-semibold">Account & List</p>
+            <p class="font-semibold md:text-[12px]">Account & List</p>
             <img
               src="images/arrow_drop_down_24dp_B7B7B7_FILL0_wght400_GRAD0_opsz24.png"
               alt=""
@@ -105,19 +109,23 @@
         </div>
         <!-- child6 -->
         <div class="text-white hover:border leading-4">
-          <p class="text-[12px] m-0">Returns</p>
-          <p class="font-semibold">& Orders</p>
+          <p class="text-[12px] md:text-[10px] m-0">Returns</p>
+          <p class="font-semibold md:text-[12px]">& Orders</p>
         </div>
 
         <!-- child7 -->
         <div class="flex flex-row hover:border">
-          <img src="images/cartt.png" alt="cart" />
-          <p class="text-white mt-4 font-bold">Cart</p>
+          <img
+            src="images/cartt.png"
+            alt="cart"
+            class="md:w-6 lg:w-8 xl:w-10"
+          />
+          <p class="text-white mt-4 font-bold md:text-[12px]">Cart</p>
         </div>
       </div>
 
       <nav class="w-[100%] bg-gray-800 p-2">
-        <div class="flex flex-row w-[60%]">
+        <div class="flex flex-row xl:w-[60%] lg:w-[70%] md:w-[100%]">
           <div class="flex flex-row items-center hover:border">
             <div class="menu_parrent">
               <div class="menu flex flex-col">
@@ -157,26 +165,30 @@
         <!-- parent of cards -->
         <div class="bg-transparent relative pt-[20%]">
           <!-- child -->
-          <div class="grid grid-cols-4 gap-4 m-4">
+          <div
+            class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-3 grid-flow-row-dense gap-4 m-4"
+          >
             <!-- card1 -->
-            <div class="card flex flex-col bg-white w-25% p-4">
+            <div class="card flex flex-col bg-white w-25% p-4 gap-y-16">
               <p class="text-[20px] font-bold">Get your game on</p>
               <img
-                class="w-[350px] h-[300px] my-5"
+                class="w-[350px] h-[250px]"
                 src="images/Fuji_Gaming_SingleI.jpg"
                 alt=""
               />
               <p
-                class="text-[14px] font font-semibold text-blue-400 hover:text-blue-500 cursor-pointer mt-[60px]"
+                class="text-[14px] font font-semibold text-blue-400 hover:text-blue-500 cursor-pointer"
               >
                 Shop gaming
               </p>
             </div>
             <!-- card2 -->
 
-            <div class="border w-25% bg-white p-4 flex flex-col">
+            <div
+              class="border w-25% bg-white p-4 flex flex-col xl:gap-y-16 lg:gap-y-16 md:gap-y-20"
+            >
               <p class="text-[20px] font-bold">Shop Fashion for less</p>
-              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4">
                 <div class="flex flex-col justify-start">
                   <img
                     src="images/smallimage1.jpg"
@@ -211,7 +223,7 @@
                 </div>
               </div>
               <p
-                class="text-[14px] font-semibold text-blue-300 hover:text-blue-500 mt-[60px] cursor-pointer"
+                class="text-[14px] font-semibold text-blue-300 hover:text-blue-500 cursor-pointer"
               >
                 Seel all deals
               </p>
@@ -219,15 +231,17 @@
 
             <!-- card3 -->
 
-            <div class="border w-25% bg-white p-4 flex flex-col">
+            <div
+              class="border w-25% bg-white p-4 flex flex-col xl:gap-y-16 lg:gap-y-16 md:gap-y-12"
+            >
               <p class="text-[20px] font-bold">Must-haves for every student</p>
               <img
                 src="images/Fuji_SingleImageCard_BTS_SH26_1x._SY304_CB788455970_.jpg"
                 alt="sigleimage2"
-                class="h-[350px] w-[350px] py-5"
+                class="w-[350px] h-[250px]"
               />
               <p
-                class="text-[14px] font-semibold text-blue-300 hover:text-blue-500 cursor-pointer mt-[60px]"
+                class="text-[14px] font-semibold text-blue-300 hover:text-blue-500 cursor-pointer"
               >
                 Shop Back to Scool
               </p>
@@ -235,9 +249,9 @@
 
             <!-- card4 -->
 
-            <div class="border w-25% bg-white p-4 flex flex-col">
+            <div class="border w-25% bg-white p-4 flex flex-col gap-y-16">
               <p class="text-[20px] font-bold">Must-have school supplies</p>
-              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4">
                 <div class="flex flex-col justify-start">
                   <img src="images/image9.jpg" alt="image1" />
                   <p class="text-[12px] font-semibold">Backpack</p>
@@ -256,28 +270,30 @@
                 </div>
               </div>
               <p
-                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+                class="text-[14px] font-semibold text-blue-300 hover:text-blue-500 cursor-pointer"
               >
                 Shop back to Scool
               </p>
             </div>
 
             <!-- card 5 -->
-            <div class="card bg-white w-25% p-4">
+            <div
+              class="card bg-white w-25% p-4 flex flex-col xl:gap-y-8 lg:gap-y-16 md:gap-y-16"
+            >
               <p class="text-[20px] font-bold">
                 Top categories in Kitchen appliences
               </p>
-              <div class="grid grid-rows-[200px] [200px] my-5">
+              <div class="grid grid-rows-2 h-fit">
                 <div class="flex flex-col justify-start">
                   <img
-                    class="w-[350px] h-[150px]"
+                    class="w-[350px] h-[120px]"
                     src="images/image13.jpg"
                     alt="image13"
                   />
                   <p class="text-[14px] font-semibold">Cookers</p>
                 </div>
 
-                <div class="grid grid-cols-3">
+                <div class="grid grid-cols-3 h-fit">
                   <div class="flex flex-col justify-start">
                     <img src="images/image 14.jpg" alt="" />
                     <p class="text-[14px] font-semibold">Cofee</p>
@@ -294,16 +310,18 @@
               </div>
 
               <p
-                class="text-[14px] font font-semibold text-blue-400 hover:text-blue-500 cursor-pointer mt-[60px]"
+                class="text-[14px] font font-semibold text-blue-400 hover:text-blue-500 cursor-pointer"
               >
                 Shop gaming
               </p>
             </div>
             <!-- card6 -->
 
-            <div class="border w-25% bg-white p-4 flex flex-col justify-start">
+            <div
+              class="border w-25% bg-white p-4 flex flex-col justify-start gap-y-16"
+            >
               <p class="text-[20px] font-bold">New Home arrivals under $50</p>
-              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4">
                 <div class="flex flex-col justify-start">
                   <img
                     src="images/image17.jpg"
@@ -338,7 +356,7 @@
                 </div>
               </div>
               <p
-                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+                class="text-[14px] font-semibold text-blue-300 hover:text-blue-500 cursor-pointer"
               >
                 Shop all latest from home
               </p>
@@ -346,9 +364,11 @@
 
             <!-- card7 -->
 
-            <div class="border w-25% bg-white p-4 flex flex-col justify-start">
+            <div
+              class="border w-25% bg-white p-4 flex flex-col justify-start gap-y-16"
+            >
               <p class="text-[20px] font-bold">Fashion trends you like</p>
-              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4">
                 <div class="flex flex-col justify-start">
                   <img
                     src="images/image21.jpg"
@@ -383,7 +403,7 @@
                 </div>
               </div>
               <p
-                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+                class="text-[14px] font-semibold text-blue-300 hover:text-blue-500 cursor-pointer"
               >
                 Explore more
               </p>
@@ -391,9 +411,11 @@
 
             <!-- card8 -->
 
-            <div class="border w-25% bg-white p-4 flex flex-col justify-start">
+            <div
+              class="border w-25% bg-white p-4 flex flex-col justify-start gap-y-16"
+            >
               <p class="text-[20px] font-bold">New Home arrivals under $50</p>
-              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4">
                 <div class="flex flex-col justify-start">
                   <img
                     src="images/image24.jpg"
@@ -428,14 +450,16 @@
                 </div>
               </div>
               <p
-                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+                class="text-[14px] font-semibold text-blue-300 hover:text-blue-500 cursor-pointer"
               >
                 Shop home products
               </p>
             </div>
             <!-- endofcards -->
             <!-- slider 1 -->
-            <div class="slidebarone group bg-white col-span-4 relative">
+            <div
+              class="slidebarone group bg-white xl:col-span-4 lg:col-span-3 md:col-span-3 relative"
+            >
               <!-- left arrow -->
               <div
                 class="bg-white w-[5%] border px-3 py-7 absolute top-[30%] hidden group-hover:block"
@@ -489,7 +513,9 @@
             </div>
 
             <!-- 2ndslidee -->
-            <div class="group slidebar bg-white col-span-4 relative">
+            <div
+              class="group slidebar bg-white xl:col-span-4 lg:col-span-3 md:col-span-3 relative"
+            >
               <div
                 class="bg-white w-[5%] border px-3 py-7 absolute top-[30%] hidden group-hover:block"
               >
@@ -542,9 +568,11 @@
             <!-- new card start -->
 
             <!-- card 9 -->
-            <div class="border w-25% bg-white p-4 flex flex-col justify-start">
+            <div
+              class="border w-25% bg-white p-4 flex flex-col justify-start gap-y-16"
+            >
               <p class="text-[20px] font-bold">Wireless Tech</p>
-              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4">
                 <div class="flex flex-col justify-start">
                   <img
                     src="images/image29.jpg"
@@ -579,16 +607,18 @@
                 </div>
               </div>
               <p
-                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+                class="text-[14px] font-semibold text-blue-300 hover:text-blue-500 cursor-pointer"
               >
                 Discover more
               </p>
             </div>
             <!-- card10 -->
 
-            <div class="border w-25% bg-white p-4 flex flex-col justify-start">
+            <div
+              class="border w-25% bg-white p-4 flex flex-col justify-start gap-y-16"
+            >
               <p class="text-[20px] font-bold">Gaming merchandise</p>
-              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4">
                 <div class="flex flex-col justify-start">
                   <img
                     src="images/image33.jpg"
@@ -623,7 +653,7 @@
                 </div>
               </div>
               <p
-                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+                class="text-[14px] font-semibold text-blue-300 hover:text-blue-500 cursor-pointer"
               >
                 See more
               </p>
@@ -631,9 +661,11 @@
 
             <!-- card11 -->
 
-            <div class="border w-25% bg-white p-4 flex flex-col justify-start">
+            <div
+              class="border w-25% bg-white p-4 flex flex-col justify-start gap-y-16"
+            >
               <p class="text-[20px] font-bold">Level up your PC here</p>
-              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4">
                 <div class="flex flex-col justify-start">
                   <img
                     src="images/image37.jpg"
@@ -668,7 +700,7 @@
                 </div>
               </div>
               <p
-                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+                class="text-[14px] font-semibold text-blue-300 hover:text-blue-500 cursor-pointer"
               >
                 Discover more
               </p>
@@ -676,9 +708,11 @@
 
             <!-- card12 -->
 
-            <div class="border w-25% bg-white p-4 flex flex-col justify-start">
+            <div
+              class="border w-25% bg-white p-4 flex flex-col justify-start gap-y-16"
+            >
               <p class="text-[20px] font-bold">Gear up to get fit</p>
-              <div class="grid grid-cols-2 gap-y-8 gap-x-4 my-5">
+              <div class="grid grid-cols-2 gap-y-8 gap-x-4">
                 <div class="flex flex-col justify-start">
                   <img
                     src="images/image41.jpg"
@@ -713,14 +747,16 @@
                 </div>
               </div>
               <p
-                class="text-[14px] font-semibold text-blue-300 mt-[60px] hover:text-blue-500 cursor-pointer"
+                class="text-[14px] font-semibold text-blue-300 hover:text-blue-500 cursor-pointer"
               >
                 Discover me
               </p>
             </div>
 
             <!-- 3rd slidebar -->
-            <div class="slidebar bg-white col-span-4 relative group">
+            <div
+              class="slidebar bg-white xl:col-span-4 lg:col-span-3 md:col-span-3 relative group"
+            >
               <div
                 class="bg-white w-[5%] border px-3 py-7 absolute top-[30%] hidden group-hover:block"
               >
@@ -776,7 +812,9 @@
             </div>
 
             <!-- 4th slider -->
-            <div class="slidebar group bg-white col-span-4 relative">
+            <div
+              class="slidebar group bg-white xl:col-span-4 lg:col-span-3 md:col-span-3 relative"
+            >
               <div
                 class="bg-white w-[5%] border px-3 py-7 absolute top-[30%] hidden group-hover:block"
               >
@@ -1036,7 +1074,9 @@
                 <!-- start cards -->
                 <div class="flex flex-row border-b-2 py-2">
                   <!-- cardone -->
-                  <div class="bg-white flex flex-col xl:w-[180px] lg:w-[120px]">
+                  <div
+                    class="bg-white flex flex-col xl:w-[180px] lg:w-[120px] md:w-[140px]"
+                  >
                     <img src="images/brwimage1.jpg" alt="" />
                     <p class="text-blue-500">
                       <a href="" class="hover:underline line-clamp-4"
@@ -1084,7 +1124,9 @@
                   </div>
 
                   <!-- cardtwo -->
-                  <div class="bg-white flex flex-col xl:w-[180px] lg:w-[120px]">
+                  <div
+                    class="bg-white flex flex-col xl:w-[180px] lg:w-[120px] md:w-[140px]"
+                  >
                     <img src="images/brwimage2_.jpg" alt="" />
                     <p class="text-blue-500">
                       <a href="" class="hover:underline line-clamp-4"
@@ -1132,7 +1174,9 @@
                   </div>
 
                   <!-- cardthree -->
-                  <div class="bg-white flex flex-col xl:w-[180px] lg:w-[120px]">
+                  <div
+                    class="bg-white flex flex-col xl:w-[180px] lg:w-[120px] md:w-[140px]"
+                  >
                     <img src="images/brwimage3.jpg" alt="" />
                     <p class="text-blue-500">
                       <a href="" class="hover:underline line-clamp-4"
@@ -1179,7 +1223,9 @@
                   </div>
 
                   <!-- cardfour -->
-                  <div class="bg-white flex flex-col xl:w-[180px] lg:w-[120px]">
+                  <div
+                    class="bg-white flex flex-col xl:w-[180px] lg:w-[120px] md:w-[140px]"
+                  >
                     <img src="images/brwimage4.jpg" alt="" />
                     <p class="text-blue-500">
                       <a href="" class="hover:underline line-clamp-4"
@@ -1227,7 +1273,9 @@
                   </div>
 
                   <!-- cardfivith -->
-                  <div class="bg-white flex flex-col xl:w-[180px] lg:w-[120px]">
+                  <div
+                    class="md:hidden lg:block bg-white flex flex-col xl:w-[180px] lg:w-[120px]"
+                  >
                     <img src="images/bewimage5.jpg" alt="" />
                     <p class="text-blue-500">
                       <a href="" class="hover:underline line-clamp-4"
@@ -1275,7 +1323,9 @@
                   </div>
 
                   <!-- cardsixth -->
-                  <div class="bg-white flex flex-col xl:w-[180px] lg:w-[120px]">
+                  <div
+                    class="md:hidden lg:block bg-white flex flex-col xl:w-[180px] lg:w-[120px]"
+                  >
                     <img src="images/brwimage6.jpg" alt="" />
                     <p class="text-blue-500">
                       <a href="" class="hover:underline line-clamp-4"
@@ -1323,7 +1373,9 @@
                   </div>
 
                   <!-- cardseven -->
-                  <div class="bg-white flex flex-col xl:w-[180px] lg:w-[120px]">
+                  <div
+                    class="md:hidden lg:block bg-white flex flex-col xl:w-[180px] lg:w-[120px]"
+                  >
                     <img src="images/brwimage7.jpg" alt="" />
                     <p class="text-blue-500">
                       <a href="" class="hover:underline line-clamp-4"
